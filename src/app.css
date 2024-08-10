@@ -1,53 +1,64 @@
-/* src/app.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .bg-primary {
+    background-color: #D32F2F;
+  }
+
+  .text-primary {
+    color: #D32F2F;
+  }
+
+  .bg-secondary {
+    background-color: #FFEB3B;
+  }
+
+  .text-secondary {
+    color: #FFEB3B;
+  }
+
+  .bg-neutral {
+    background-color: #F5F5F5;
+  }
+
+  .text-text {
+    color: #212121;
+  }
+
+  .btn-primary {
+    background-color: #D32F2F;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .btn-primary:hover {
+    background-color: #FFEB3B;
+    transform: translateY(-2px) scale(1.05);
+  }
+
+  footer {
+    background-color: #D32F2F;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  footer a {
+    color: #FFEB3B;
+    margin: 0 0.5rem;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+}
 
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  @apply font-sans;
 }
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: brown;
-  color: white;
-}
-
-.navbar-brand {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.navbar-links {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar-links a {
-  color: white;
-  text-decoration: none;
-}
-
-.navbar-links a:hover {
-  text-decoration: underline;
-}
-
-.container {
-  text-align: center;
-  background: white;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-top: 2rem;
-}
-
-h1 {
-  color: #333;
-}
-
-

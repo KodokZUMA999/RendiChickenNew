@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .about-container {
+    @apply bg-neutral min-h-screen flex items-center justify-center p-6;
+  }
+
+  .about-content {
+    @apply bg-white p-8 rounded-lg shadow-lg max-w-2xl;
+  }
+
+  .about-title {
+    @apply text-3xl font-bold text-primary mb-4;
+  }
+
+  .about-description {
+    @apply text-text text-lg mb-4;
+  }
+}
